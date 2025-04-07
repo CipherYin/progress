@@ -6,10 +6,10 @@ export default function Home() {
     <div className="flex items-center justify-center w-full bg-white rounded-2xl p-10">
       <Tabs defaultValue="Grafana" className="w-full items-center">
         <TabsList className="bg-gray-200">
-          <TabsTrigger  value="Grafana"  className="text-2xl px-10 cursor-pointer">Grafana Dashboard</TabsTrigger>
-          <TabsTrigger value="Kalfka"  className="text-2xl px-10 cursor-pointer">Kalfka Cluster</TabsTrigger>
-          <TabsTrigger value="Clickhouse"  className="text-2xl px-10 cursor-pointer">Clickhouse database cluster</TabsTrigger>
-          <TabsTrigger value="video"  className="text-2xl px-10 cursor-pointer">Demo video</TabsTrigger>
+          <TabsTrigger  value="Grafana"  className="text-xl px-6 cursor-pointer">Grafana Dashboard</TabsTrigger>
+          <TabsTrigger value="Kalfka"  className="text-xl px-6 cursor-pointer">Kalfka Cluster</TabsTrigger>
+          <TabsTrigger value="Clickhouse"  className="text-xl px-6 cursor-pointer">Clickhouse database cluster</TabsTrigger>
+          <TabsTrigger value="video"  className="text-xl px-6 cursor-pointer">Demo video</TabsTrigger>
 
         </TabsList>
         <TabsContent value="Grafana"> 
