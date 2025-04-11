@@ -6,7 +6,7 @@ export default function IntroductionPage() {
     <div className="flex flex-col justify-center items-center">
       <div className="relative  w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw] overflow-hidden">
                                     <Image
-                                        src="/images/home/introduction.jpg"
+                                        src="/images/home/introduction (1).jpg"
                                         alt="icon"
                                         fill
                                         className="object-cover" 

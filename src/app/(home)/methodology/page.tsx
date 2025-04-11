@@ -36,7 +36,7 @@ export default function MethodologyPage() {
               <span className="lg:text-[1.4vw] text-[2vw] mt-4 leading-loose">To support AI-driven trading strategies and market analysis, a robust data acquisition framework should be established. 
                 We propose using Binance and OKX APIs to collect detailed transaction data, order book snapshots, and market depth information in real-time. To efficiently store and manage this data, a distributed storage solution such as Apache Kafka or ClickHouse could be implemented. This will ensure low-latency access to historical and real-time data, enabling traders to make informed decisions quickly.</span>
             </div>
-            <div className="bg-[#AAAAAA] w-[60vw] h-[29vw] lg:h-[27vw] -mt-5 lg:-mt-20 -ml-[20vw] lg:-ml-[26vw] shrink-0">
+            <div className="bg-[#AAAAAA] w-[60vw] h-[29vw] lg:h-[33vw] 2xl:h-[27vw] -mt-5 lg:-mt-20 -ml-[20vw] lg:-ml-[26vw] shrink-0">
               <div className="relative w-full h-[55vw] lg:h-[36vw] 2xl:h-[30vw] overflow-hidden">
                         <Image
                                             src="/images/progress/binance.webp"
