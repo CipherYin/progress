@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
@@ -7,17 +8,19 @@ import 'yet-another-react-lightbox/styles.css';
 
 interface Props{
     url: string
+    className: string
 }
 
-export default function StaticImagePreview({url}:Props) {
+export default function StaticImagePreview({url,className}:Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className={cn("relative w-full max-w-4xl mx-auto",className)}>
       <Image
+        fill
         src={url}
         alt="Progress"
-        className="rounded-md shadow-lg cursor-pointer transition hover:scale-[1.02]"
+        className="object-contain cursor-pointer transition hover:scale-[1.02]"
         onClick={() => setOpen(true)}
       />
 

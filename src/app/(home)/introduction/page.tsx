@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function IntroductionPage() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="relative  w-full h-[50vw] lg:h-[50vw] 2xl:h-[28vw] overflow-hidden">
+      <div className="relative  w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw] overflow-hidden">
                                     <Image
                                         src="/images/home/introduction.jpg"
                                         alt="icon"

@@ -28,7 +28,7 @@ export default function ProgressPage() {
   return (
     <div className="flex flex-col justify-center items-center mb-40">
       <div
-        className="w-full h-[50vw] lg:h-[50vw] 2xl:h-[28vw]"
+        className="w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw]"
         style={{
           backgroundImage: "url('/images/home/bitcoin2.jpg')",
           backgroundRepeat: "repeat",
@@ -37,7 +37,7 @@ export default function ProgressPage() {
         }}
       ></div>
 
-      <div className="flex flex-col mt-[-20vw] lg:mt-[-8vw] z-10 w-[76.5%] py-3 lg:px-6 lg:py-12 font-bold text-[5vw] lg:text-[3.2vw] items-center justify-center bg-white text-center">
+      <div className="flex flex-col mt-[-20vw] lg:mt-[-10vw] z-10 w-[76.5%] py-3 lg:px-6 lg:py-12 font-bold text-[5vw] lg:text-[3.2vw] items-center justify-center bg-white text-center">
         Current Progress
 
         <div className="mt-2 lg:mt-4 text-[3vw]  lg:text-[1.4vw] font-light max-w-[60vw] lg:max-w-xl 2xl:max-w-4xl leading-loose text-black">
@@ -102,13 +102,13 @@ export default function ProgressPage() {
 
         Second, we established a Kafka cluster as a message queue to rebalance market data, ensuring the database remains secure and performs efficiently.    
         </div>
-        <StaticImagePreview url='/images/progress/progress1_4.png'/>
+        <StaticImagePreview url='/images/progress/progress1_4.png' className='h-[20vw]'/>
         <div className='lg:px-6 2xl:px-44 lg:text-[1.4vw] my-10'>
 
 
         Finally, we deployed a ClickHouse database cluster for data storage, utilizing a Buffer Table to enable rapid querying of the latest market data.        </div>
         </div>
-        <StaticImagePreview url='/images/progress/progress1_5.png'/>
+        <StaticImagePreview url='/images/progress/progress1_5.png'  className='h-[50vw]'/>
 
     </div>
 
