@@ -5,26 +5,40 @@ import 'yet-another-react-lightbox/styles.css';
 
 import { useKeenSlider } from 'keen-slider/react';
 import Lightbox from 'yet-another-react-lightbox';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import StaticImagePreview from '@/modules/progress/static-image-preview';
 export default function ProgressPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [hovered, setHovered] = useState(false);
-
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slideChanged(s) {
       setCurrentIndex(s.track.details.rel);
     },
   });
-
   const images = [
     '/images/progress/progress1_1.png',
     '/images/progress/progress1_2.png',
     '/images/progress/progress1_3.png',
   ];
+  useEffect(() => {
+    const imgPromises = images.map((src) => {
+      return new Promise<void>((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve();
+        img.onerror = () => resolve(); 
+      });
+    });
+  
+    Promise.all(imgPromises).then(() => {
+      setImagesLoaded(true);
+    });
+  }, [images]);
+ 
   return (
     <div className="flex flex-col justify-center items-center mb-40">
       <div
@@ -54,7 +68,7 @@ export default function ProgressPage() {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            <div ref={sliderRef} className="keen-slider">
+            {imagesLoaded&&<div ref={sliderRef} className="keen-slider">
               {images.map((src, index) => (
                 <div
                   key={index}
@@ -71,7 +85,8 @@ export default function ProgressPage() {
                   />
                     </div>
                   ))}
-                </div>
+                </div>}
+            
 
                 {hovered && (
                   <button
