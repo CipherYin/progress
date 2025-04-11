@@ -11,7 +11,7 @@ export default function Home() {
       <div className="lg:text-[2.7vw] font-bold mb-6 lg:mb-10">Learning Techniques</div>
       <div className="relative  w-full h-[100vw] lg:h-[40vw] 2xl:h-[38vw] overflow-hidden">
                               <Image
-                                  src="/images/home/bitcoin1.jpg"
+                                  src="/images/home/bitcoin1 (1).jpg"
                                   alt="icon"
                                   fill
                                   className="object-cover" 

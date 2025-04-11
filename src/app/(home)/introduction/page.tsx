@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function IntroductionPage() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="relative  w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw] overflow-hidden">
+      <div className="relative  w-full h-[50vw] lg:h-[25vw] 2xl:h-[28vw] overflow-hidden">
                                     <Image
                                         src="/images/home/introduction (1).jpg"
                                         alt="icon"
@@ -19,13 +19,13 @@ export default function IntroductionPage() {
         <div className="lg:max-w-6xl max-w-[79vw] mx-auto mt-10 lg:mt-40 text-[3.4vw] lg:text-[1.5vw] font-thin leading-loose indent-8">
         With the rapid growth of cryptocurrencies, automated financial algorithmic trading systems have been revolutionized. The decentralized and highly volatile nature of cryptocurrencies demands innovative strategies to manage risk and optimize profits. More and more top hedge-funds are coming into cryptocurrencies markets to compete the best market maker. Real-time data from exchanges like Binance and OKX provide valuable insights for constructing trading strategies but require robust frameworks for analysis and execution. This project focuses on building a trading system that integrates data acquisition, backtesting and order execution, market making algorithmic strategies, and ML/DL-based insights to improve efficiency and adaptability in crypto trading.
         </div>
-        <div className=" w-full py-10 lg:py-28  lg:h-[50vw] 2xl:h-[28vw] overflow-hidden">
+        <div className=" w-full py-10 lg:py-28   2xl:h-[28vw] overflow-hidden">
           <div className="flex items-center justify-center mb-12 px-4">
             <div className="flex-1 border-t-2 border-black"></div>
             <h2 className="px-16  lg:text-[2vw] font-bold">The Team</h2>
             <div className="flex-1 border-t-2 border-black"></div>
           </div>
-          <div className="flex justify-between lg:px-20 2xl:px-40 lg:py-16">
+          <div className="flex justify-between lg:px-20 2xl:px-40 2xl:py-16">
             {/* Member 1 */}
             <div className="flex flex-col space-y-1 lg:px-10 items-center justify-center">
               <div className="font-bold text-[3vw] lg:text-[2vw]">WANG Yucheng</div>

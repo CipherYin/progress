@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function MethodologyPage() {
   return (
     <div className="flex flex-col justify-center items-center mb-20">
-      <div className="relative  w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw] overflow-hidden">
+      <div className="relative  w-full h-[50vw] lg:h-[26vw] 2xl:h-[28vw] overflow-hidden">
                                     <Image
                                         src="/images/home/Main Building 1.jpg"
                                         alt="icon"

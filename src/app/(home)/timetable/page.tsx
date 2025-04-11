@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function TimeablePage() {
   return (
     <div className="flex flex-col justify-center items-center mb-20">
-      <div className="relative  w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw] overflow-hidden">
+      <div className="relative  w-full h-[50vw] lg:h-[25vw] 2xl:h-[28vw] overflow-hidden">
                                     <Image
                                         src="/images/progress/timeable.avif"
                                         alt="icon"

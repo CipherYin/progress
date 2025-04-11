@@ -28,7 +28,7 @@ export default function ProgressPage() {
   return (
     <div className="flex flex-col justify-center items-center mb-40">
       <div
-        className="w-full h-[50vw] lg:h-[40vw] 2xl:h-[28vw]"
+        className="w-full h-[50vw] lg:h-[25vw] 2xl:h-[28vw]"
         style={{
           backgroundImage: "url('/images/home/bitcoin2.jpg')",
           backgroundRepeat: "repeat",
