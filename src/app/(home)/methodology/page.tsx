@@ -30,12 +30,14 @@ export default function MethodologyPage() {
         </div>
         
         <div className="flex bg-[#E9EAEB] w-full mt-14 2xl:mt-4 pb-10 pt-10 lg:pt-30">
-        <div className="flex flex-col bg-white w-[50vw] lg:w-[60vw] lg:ml-30 items-center lg:px-40 lg:py-10 z-10 shrink-0">
-            <span className="lg:text-[2.7vw] text-[2.7vw] font-bold">1. Data Acquisition and Management            </span>
-            <span className="lg:text-[1.4vw] text-[2vw] mt-4 leading-loose pb-4">To support AI-driven trading strategies and market analysis, a robust data acquisition framework should be established. We propose using Binance and OKX APIs to collect detailed transaction data, order book snapshots, and market depth information in real-time. To efficiently store and manage this data, a distributed storage solution such as Apache Kafka or ClickHouse could be implemented. This will ensure low-latency access to historical and real-time data, enabling traders to make informed decisions quickly.</span>
-          </div>
-          <div className="bg-[#AAAAAA] w-[60vw] h-[29vw] lg:h-[40vw] -mt-5 lg:-mt-20 -ml-[20vw] lg:-ml-[26vw] shrink-0">
-              <div className="relative w-full h-[55vw] lg:h-[37vw] 2xl:h-[30vw] overflow-hidden">
+          <div className="flex flex-col bg-white w-[50vw] lg:w-[60vw] pb-2 lg:pb-10  items-center lg:px-40 lg:pt-10 z-10 shrink-0">
+            
+              <span className="lg:text-[2.3vw] text-[2.7vw] font-bold">1. Data Acquisition and Management            </span>
+              <span className="lg:text-[1.4vw] text-[2vw] mt-4 leading-loose">To support AI-driven trading strategies and market analysis, a robust data acquisition framework should be established. 
+                We propose using Binance and OKX APIs to collect detailed transaction data, order book snapshots, and market depth information in real-time. To efficiently store and manage this data, a distributed storage solution such as Apache Kafka or ClickHouse could be implemented. This will ensure low-latency access to historical and real-time data, enabling traders to make informed decisions quickly.</span>
+            </div>
+            <div className="bg-[#AAAAAA] w-[60vw] h-[29vw] lg:h-[27vw] -mt-5 lg:-mt-20 -ml-[20vw] lg:-ml-[26vw] shrink-0">
+              <div className="relative w-full h-[55vw] lg:h-[36vw] 2xl:h-[30vw] overflow-hidden">
                         <Image
                                             src="/images/progress/binance.webp"
                                             alt="icon"
